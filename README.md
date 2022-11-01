@@ -1,3 +1,3 @@
 # challengeHangMan
 
-HangMan game in HTML, CSS, JS
+Responsive HangMan game in HTML, CSS, JS
