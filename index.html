@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <title>challenge HangMan</title>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>The Banksy Hangman</h1>
+            <h1><span id="over"></span></h1>
+            <button class="start" onclick="load()">new Game</button>
+        </header>
+        <main>
+            <section class="images">
+                <img id="image" src="./img/life.jpg" alt="Banksy painting">
+            </section>
+            <section class="toBeGuessed">
+                <p id="word"></p>
+            </section>
+            <section class="guessCount">
+                
+                <p class="incorrect">Wrong guesses : <span id="wrongGuess"></span></p>
+                <p class="lives">Lives left : <span id="nbrLives"></span></p>
+            </section>
+            <section id="letters">
+                <!-- keyboard  -->
+            </section>
+        </main>
+    </div>
+    <script src="./js/listWords.js"></script>
+    <script>
+        const jsConfetti = new JSConfetti()
+        if(document.getElementById('over').value === 'over'){
+            jsConfetti.addConfetti()
+        } 
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+
+h1{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.start{
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    border: 1.5px solid limegreen;
+    background-color: white;
+    color: limegreen;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 12px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.images{
+    margin-top: 30px;
+    max-width: 50%;
+    margin: auto;
+}
+
+img{
+
+    width: 160px;
+    height: 200px;
+}
+
+#word{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.guessCount{
+    margin-top: 30px;
+}
+
+
+.incorrect{
+    color: red;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+.lives{
+    margin-left: 30px;
+    color: darkmagenta;
+}
+
+#letters{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.lettersButtons{
+    padding: 10px;
+    margin: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+#over{
+    margin-top: 30px;
+    color: darkorchid;
+}
+
+@media only screen and (min-width: 768px){
+    body{
+        background-color: white;
+    }
+
+    .container{
+        max-width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1.5px solid teal;
+        border-radius: 5px;
+        background-color: antiquewhite;
+    }
+
+    .images{
+        
+        max-width: 30%;
+        margin: auto;
+    }
+
+    img{
+
+        width: 440px;
+        height: 600px;
+    }
+
+    .guessCount{
+        margin-top: 20px;
+    }
+}
